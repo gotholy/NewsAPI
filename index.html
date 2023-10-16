@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>NewsAPI Example</h1>
+      <div class="inputContainer">
+        <label for="topicInput">Thema eingeben:</label>
+        <input type="text" id="topicInput" placeholder="Suchbegriff" />
+        <label for="languageSelect">Sprache auswählen:</label>
+        <select id="languageSelect">
+          <option value="de">Deutsch</option>
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+        </select>
+        <label for="sortBySelect">Sortierung</label>
+        <select id="sortBySelect">
+          <option value="popularity">Popularität</option>
+          <option value="relevancy">Relevanz</option>
+        </select>
+      </div>
+      <button id="getNewsButton">Nachrichten abrufen</button>
+      <div id="newsResults"></div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
